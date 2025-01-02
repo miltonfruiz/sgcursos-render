@@ -3,6 +3,8 @@ from flask_cors import CORS
 from cursos_app.config import Config
 from cursos_app.models import db
 from cursos_app.routes import routes
+from flask_migrate import Migrate
+
 import os
 
 app = Flask(
@@ -27,6 +29,8 @@ with app.app_context():
 def handle_exception(e):
     app.logger.error(f"Error no controlado: {e}")
     return {"mensaje": "Error interno del servidor", "tipo": "error"}, 500
+
+migrate = Migrate(app, db)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
