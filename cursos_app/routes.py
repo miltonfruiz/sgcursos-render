@@ -81,9 +81,7 @@ def agregar_estudiante():
         if curso_index < 0 or curso_index >= len(cursos):
             return jsonify({"mensaje": "Curso no encontrado", "tipo": "error"}), 404
         curso = cursos[curso_index]
-        estudiante_existente = next(
-            (est for est in curso.estudiantes if est.nombre.lower() == nombre.lower()), None
-        )
+        estudiante_existente = Estudiante.query.filter(func.lower(Estudiante.nombre) == func.lower(nombre), Estudiante.curso_id == curso.id).first()
         if estudiante_existente:
             return jsonify({"mensaje": "¡El estudiante ya existe!", "tipo": "error"}), 400
         nuevo_estudiante = Estudiante(nombre=nombre, edad=edad, nota=nota)
