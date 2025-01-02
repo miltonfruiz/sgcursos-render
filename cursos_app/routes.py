@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request, render_template
-from app.models import db, Curso, Estudiante, Valoracion
+from cursos_app.models import db, Curso, Estudiante, Valoracion
 from sqlalchemy import func
 from sqlalchemy.orm import joinedload
 

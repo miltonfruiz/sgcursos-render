@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
-from app.config import Config
-from app.models import db
-from app.routes import routes
+from cursos_app.config import Config
+from cursos_app.models import db
+from cursos_app.routes import routes
 import os
 
 app = Flask(
