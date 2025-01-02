@@ -8,8 +8,8 @@ import os
 
 app = Flask(
     __name__,
-    template_folder=os.path.join(os.getcwd(), 'app/templates'),
-    static_folder=os.path.join(os.getcwd(), 'app/static')
+    template_folder=os.path.join(os.getcwd(), 'cursos_app/templates'),
+    static_folder=os.path.join(os.getcwd(), 'cursos_app/static')
 )
 
 app.config.from_object(Config)
