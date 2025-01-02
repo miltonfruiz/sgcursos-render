@@ -519,17 +519,14 @@ formCurso.addEventListener("submit", async (e) => {
   const cursoCorregido = primeraMayuscula(nombreCurso.value);
   const profesorCorregido = primeraMayuscula(profesorCurso.value);
   try {
-    const response = await fetch(
-      "https://sgcursos-render.onrender.com/api/cursos",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          nombre: cursoCorregido,
-          profesor: profesorCorregido,
-        }),
-      }
-    );
+    const response = await fetch("https://sgcursos.onrender.com/api/cursos", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        nombre: cursoCorregido,
+        profesor: profesorCorregido,
+      }),
+    });
     const data = await response.json();
     if (!response.ok) {
       mostrarMensaje(data.mensaje, data.tipo);
@@ -556,7 +553,7 @@ guardarEdicion.addEventListener("click", async () => {
         nuevoNombre !== cursoActual.nombre ||
         nuevoProfesor !== cursoActual.profesor;
       const response = await fetch(
-        `http://localhost:5000/api/cursos/${encodeURIComponent(
+        `https://sgcursos.onrender.com/api/cursos/${encodeURIComponent(
           cursoActual.nombre
         )}`,
         {
@@ -577,7 +574,7 @@ guardarEdicion.addEventListener("click", async () => {
       if (estudianteAEliminar) {
         try {
           const deleteResponse = await fetch(
-            `/api/estudiantes/${estudianteAEliminar}`,
+            `https://sgcursos.onrender.com/api/estudiantes/${estudianteAEliminar}`,
             { method: "DELETE" }
           );
           const deleteData = await deleteResponse.json();
@@ -663,7 +660,9 @@ listaCursos.addEventListener("click", async (e) => {
     botonConfirmar.onclick = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/cursos/${encodeURIComponent(cursoNombre)}`,
+          `https://sgcursos.onrender.com/api/cursos/${encodeURIComponent(
+            cursoNombre
+          )}`,
           {
             method: "DELETE",
           }
@@ -1002,7 +1001,7 @@ guardarEdicionEstudiante.addEventListener("click", () => {
       edad: edadNueva,
       nota: notaNueva,
     };
-    fetch(`/api/estudiantes/${estudianteId}`, {
+    fetch(`https://sgcursos.onrender.com/api/estudiantes/${estudianteId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -1226,11 +1225,14 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     try {
-      const response = await fetch("http://localhost:5000/api/valoraciones", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ correo, comentario, valoracion }),
-      });
+      const response = await fetch(
+        "https://sgcursos.onrender.com/api/valoraciones",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ correo, comentario, valoracion }),
+        }
+      );
       const data = await response.json();
       if (response.ok) {
         mostrarMensaje("¡Gracias por tu valoración!", "success");
@@ -1271,7 +1273,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   const cargarComentarios = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/valoraciones");
+      const response = await fetch(
+        "https://sgcursos.onrender.com/api/valoraciones"
+      );
       if (response.ok) {
         const data = await response.json();
         const { promedio, valoraciones } = data;
