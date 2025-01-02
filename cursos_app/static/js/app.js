@@ -519,14 +519,17 @@ formCurso.addEventListener("submit", async (e) => {
   const cursoCorregido = primeraMayuscula(nombreCurso.value);
   const profesorCorregido = primeraMayuscula(profesorCurso.value);
   try {
-    const response = await fetch("http://localhost:5000/api/cursos", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        nombre: cursoCorregido,
-        profesor: profesorCorregido,
-      }),
-    });
+    const response = await fetch(
+      "https://sgcursos-render.onrender.com/api/cursos",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nombre: cursoCorregido,
+          profesor: profesorCorregido,
+        }),
+      }
+    );
     const data = await response.json();
     if (!response.ok) {
       mostrarMensaje(data.mensaje, data.tipo);
@@ -849,13 +852,16 @@ formEstudiante.addEventListener("submit", async (e) => {
     curso_id: cursoIndex,
   };
   try {
-    const response = await fetch("/api/estudiantes", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      "https://sgcursos-render.onrender.com/api/estudiantes",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
     const result = await response.json();
     if (response.ok && result.tipo === "success") {
       mostrarMensaje(result.mensaje, "success");
