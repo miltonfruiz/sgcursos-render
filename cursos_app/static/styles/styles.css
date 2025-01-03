@@ -6,12 +6,18 @@
   font-family: "Montserrat", sans-serif;
 }
 #main-section {
+  justify-content: center;
+  width: 85%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 #container-editar-estudiante,
 #container-editar-curso {
   border-radius: 3px;
+}
+#container-container {
+  display: flex;
+  justify-content: center;
 }
 .banner-text {
   display: flex;
