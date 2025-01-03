@@ -63,7 +63,7 @@
   padding: 7px 43px;
 }
 .contendor-texto-diseño {
-  margin-top: 180px;
+  margin-top: 200px;
 }
 .contenedor-texto-plataforma {
   margin-top: 170px;
@@ -826,6 +826,7 @@ label {
   }
 }
 .presentacion {
+  width: 44%;
   margin: 0;
   padding: 0;
   animation: fadeIn 7s;
@@ -844,6 +845,27 @@ label {
   font-size: 11px;
   font-weight: 300;
   color: white !important;
+}
+/* ------------------------ Diseño Responsive 360px ------------------------*/
+@media (max-width: 360px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .presentacion {
+    width: 95%;
+  }
+  .contenedor-texto-plataforma .texto-gestion {
+    display: block;
+  }
+  .contenedor-texto-plataforma .texto-educativa {
+    display: none;
+  }
+  .contenedor-texto-plataforma .texto-plataforma,
+  .contenedor-texto-plataforma .texto-gestion {
+    font-size: 19px;
+  }
 }
 /* ------------------------ Diseño Responsive 442px ------------------------*/
 @media (max-width: 443px) {
@@ -1078,7 +1100,7 @@ footer {
 .texto-educativa,
 .texto-gestion,
 .texto-plataforma {
-  font-size: 31px;
+  font-size: 27px;
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 1s, transform 1s;
@@ -1111,7 +1133,7 @@ footer {
 .texto-solucion {
   font-size: 11px;
   font-weight: 300;
-  text-align: center;
+  text-align: justify;
   padding: 10px;
   width: 100%;
   display: inline-block;
