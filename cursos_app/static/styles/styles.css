@@ -890,6 +890,28 @@ label {
   #boton-agregar-curso {
     width: 30%;
   }
+  #busqueda-container {
+    width: 50%;
+  }
+  #exportar-json {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px;
+  }
+
+  .container-json {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-download {
+    font-size: 10px;
+  }
+  #busqueda-container .fa-magnifying-glass {
+    position: absolute;
+    left: 8%;
+  }
 }
 /* ------------------------ Diseño Responsive 442px ------------------------*/
 @media (max-width: 443px) {
