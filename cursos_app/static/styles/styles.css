@@ -883,6 +883,13 @@ label {
   .presentacion .texto-solucion {
     font-size: 9px;
   }
+  #main-section {
+    width: 100%;
+  }
+  #boton-agregar-estudiante,
+  #boton-agregar-curso {
+    width: 30%;
+  }
 }
 /* ------------------------ Diseño Responsive 442px ------------------------*/
 @media (max-width: 443px) {
