@@ -913,14 +913,72 @@ label {
     left: 8%;
   }
 }
-/* ------------------------ Diseño Responsive 442px ------------------------*/
-@media (max-width: 443px) {
+/* ------------------------ Diseño Responsive 480px ------------------------*/
+@media (max-width: 480px) {
   .contenedor-banner,
   .main-container {
     width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .presentacion {
+    margin-top: 10px;
+    width: 69%;
+  }
+  .contenedor-texto-plataforma .texto-gestion {
+    display: block;
+  }
+  .contenedor-texto-plataforma .texto-educativa {
+    display: none;
+  }
+  .contenedor-texto-plataforma .texto-plataforma,
+  .contenedor-texto-plataforma .texto-gestion {
+    font-size: 20px;
+  }
+  .contendor-texto-diseño {
+    margin-top: 140px;
+  }
+  #link-empezar {
+    width: 50%;
+    height: 75%;
+  }
+  .presentacion .texto-solucion {
+    font-size: 9px;
+  }
+  #main-section {
+    width: 100%;
+  }
+  #boton-agregar-estudiante,
+  #boton-agregar-curso {
+    width: 30%;
+  }
+  #busqueda-container {
+    width: 50%;
+  }
+  #exportar-json {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px;
+  }
+
+  .container-json {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fa-download {
+    font-size: 10px;
+  }
+  #busqueda-container .fa-magnifying-glass {
+    position: absolute;
+    left: 8%;
   }
 }
 /*------------------------ Diseño Responsive 575px ------------------------*/
@@ -1021,7 +1079,6 @@ label {
     width: 110%;
   }
 }
-
 /*----------------------- Extras --------------------------*/
 .container {
   width: 100%;
