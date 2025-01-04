@@ -478,7 +478,7 @@ input:hover {
   width: 50%;
 }
 #busqueda-ingresada {
-  width: 95%;
+  width: 80%;
   border-radius: 24px;
   font-size: 11px;
   padding: 7px 30px;
@@ -490,8 +490,8 @@ input:hover {
 }
 .fa-magnifying-glass {
   position: absolute;
-  left: 33px;
-  top: 51%;
+  left: 73px;
+  top: 49%;
   transform: translateY(-50%);
   color: #999;
   pointer-events: none;
@@ -631,9 +631,9 @@ input:hover {
   justify-content: space-evenly;
   text-align: center;
   color: aliceblue;
-  padding: 40px 40px 10px 40px;
+  padding: 40px;
   background-color: rgb(55, 55, 57);
-  height: 370px;
+  height: 400px;
 }
 .footer-redes,
 .footer-contacto {
@@ -866,9 +866,11 @@ label {
     margin: 0;
     padding: 0;
   }
+  div .presentacion {
+    width: 70%;
+  }
   .presentacion {
     margin-top: 10px;
-    width: 69%;
   }
   #link-empezar {
     padding: 10px 40px;
@@ -1013,7 +1015,7 @@ label {
     margin-top: 30px;
   }
   div .copyright {
-    padding: 43px 0px 0px 0px;
+    padding: 53px 0px 0px 0px;
   }
   td #boton-eliminar-estudiante,
   td #boton-editar-estudiante {
@@ -1037,17 +1039,39 @@ label {
 }
 /*------------------------ Diseño Responsive 767px ------------------------*/
 @media (max-width: 767px) {
-  .fa-magnifying-glass {
+  #busqueda-container {
+    position: relative;
+  }
+  #fa-lupa {
     position: absolute;
-    left: 100px;
+    left: 32px;
     top: 50%;
+    transform: translateY(-50%);
+  }
+  div #busqueda-ingresada {
+    width: 100%;
+  }
+  .texto-eliminar-curso,
+  .texto-editar-curso {
+    display: none;
+  }
+  .contenedor-texto-plataforma .texto-plataforma,
+  .contenedor-texto-plataforma .texto-gestion,
+  .contenedor-texto-plataforma .texto-educativa {
+    font-size: 20px;
+  }
+  div .presentacion {
+    width: 60%;
+  }
+  #main-section {
+    width: 100%;
   }
 }
 /*------------------------ Diseño Responsive 991px ------------------------*/
 @media (max-width: 991px) {
-  .fa-magnifying-glass {
+  div .fa-magnifying-glass {
     position: absolute;
-    left: 157px;
+    left: 55px;
     top: 50%;
   }
   .texto-cerrar-comentarios,
@@ -1063,8 +1087,8 @@ label {
 @media (max-width: 1199px) {
   .fa-magnifying-glass {
     position: absolute;
-    left: 27px;
-    top: 48%;
+    left: 64px;
+    top: 49%;
   }
   .texto-exportar-json {
     display: none;
