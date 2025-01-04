@@ -1015,6 +1015,10 @@ label {
   div .copyright {
     padding: 43px 0px 0px 0px;
   }
+  td #boton-eliminar-estudiante,
+  td #boton-editar-estudiante {
+    width: 40%;
+  }
 }
 /*------------------------ Diseño Responsive 767px ------------------------*/
 @media (max-width: 767px) {
