@@ -903,7 +903,7 @@ listaEstudiantesEdicion.addEventListener("click", (e) => {
       document.getElementById("modal-confirmacion")
     );
     mensajeConfirmacion.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> 
-    ¿Estás seguro de que deseas eliminar al estudiante "<strong>${estudiante.nombre}</strong>"? 
+    ¿<span class="estas-seguro-estudiante">Estás seguro de que deseas </span>eliminar al estudiante "<strong>${estudiante.nombre}</strong>"? 
     <i class="fa-solid fa-triangle-exclamation"></i>`;
     modalConfirmacion.show();
     const botonConfirmar = document.getElementById("btn-confirmar");
