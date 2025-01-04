@@ -1022,11 +1022,17 @@ label {
   div #mensaje-confirmacion {
     font-size: 11px;
   }
+  button .texto-cancelar-estudiante,
+  button .texto-guardar-estudiante,
   p .estas-seguro-estudiante,
   button .texto-btn-cancelar,
   button .texto-btn-confirmar,
   p .estas-seguro {
     display: none;
+  }
+  div #cancelar-edicion,
+  div #guardar-edicion {
+    width: 25%;
   }
 }
 /*------------------------ Diseño Responsive 767px ------------------------*/
