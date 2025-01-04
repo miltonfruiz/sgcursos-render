@@ -1019,6 +1019,14 @@ label {
   td #boton-editar-estudiante {
     width: 40%;
   }
+  div #mensaje-confirmacion {
+    font-size: 11px;
+  }
+  button .texto-btn-cancelar,
+  button .texto-btn-confirmar,
+  p .estas-seguro {
+    display: none;
+  }
 }
 /*------------------------ Diseño Responsive 767px ------------------------*/
 @media (max-width: 767px) {

@@ -657,7 +657,7 @@ listaCursos.addEventListener("click", async (e) => {
       .textContent.trim()
       .toLowerCase();
     mensajeConfirmacion.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> 
-    ¿Estás seguro de que deseas eliminar el curso "<strong>${cursoNombre}</strong>"? 
+    ¿<span class="estas-seguro">Estás seguro de que deseas </span>eliminar el curso "<strong>${cursoNombre}</strong>"? 
     <i class="fa-solid fa-triangle-exclamation"></i>`;
     modalConfirmacion.style.display = "block";
     botonConfirmar.onclick = async () => {
