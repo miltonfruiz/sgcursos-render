@@ -965,7 +965,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 22px;
+    padding: 10px 33px;
   }
 
   .container-json {
@@ -978,7 +978,11 @@ label {
   }
   #busqueda-container .fa-magnifying-glass {
     position: absolute;
-    left: 8%;
+    left: 15%;
+  }
+  .contenedor-select #filtro-estudiantes {
+    width: 80%;
+    margin-right: 10px;
   }
 }
 /*------------------------ Diseño Responsive 575px ------------------------*/
