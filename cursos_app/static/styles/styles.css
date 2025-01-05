@@ -774,6 +774,9 @@ input:hover {
   justify-content: center;
   align-items: center;
 }
+.texto-feedback {
+  margin-bottom: 13px;
+}
 label {
   font-weight: 600;
   font-size: 11px;
@@ -1033,6 +1036,9 @@ label {
   .footer-contacto .texto-contacto {
     margin-bottom: 3px;
   }
+  .footer-valoracion .texto-feedback {
+    margin-bottom: 10px;
+  }
   .footer-content .footer-contacto {
     margin-top: 25px;
   }
@@ -1060,8 +1066,6 @@ label {
   }
   #abrir-modal {
     width: 100%;
-  }
-  .fa-comment-dots {
   }
   div .copyright {
     padding: 110px 0px 0px 0px;
