@@ -1157,6 +1157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ...document.querySelectorAll(".boton-editar-curso"),
     ...document.querySelectorAll(".boton-eliminar-curso"),
     ...document.querySelectorAll(".h3-mis-redes"),
+    ...document.querySelectorAll(".texto-feedback"),
     ...document.querySelectorAll(".texto-contacto"),
     ...document.querySelectorAll(".footer-subredes"),
     ...document.querySelectorAll(".info-redes"),

@@ -765,10 +765,14 @@ input:hover {
   margin-top: auto;
   text-align: center;
 }
+.texto-feedback,
 .h3-mis-redes {
   letter-spacing: 5px;
   font-size: 14px;
   font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 label {
   font-weight: 600;
@@ -892,9 +896,6 @@ label {
   }
   div .contendor-texto-diseño {
     margin-top: 115px;
-  }
-  .footer {
-    height: 600px;
   }
 }
 /* ------------------------ Diseño Responsive 480px ------------------------*/
@@ -1049,13 +1050,21 @@ label {
   }
   .footer-content .footer-valoracion {
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    gap: 10px;
-    margin-top: 30px;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .footer-valoracion .contenedor-feedback {
+    display: flex;
+    width: 220px;
+    gap: 30px;
+  }
+  #abrir-modal {
+    width: 100%;
+  }
+  .fa-comment-dots {
   }
   div .copyright {
-    padding: 60px 0px 0px 0px;
+    padding: 110px 0px 0px 0px;
   }
   td #boton-eliminar-estudiante,
   td #boton-editar-estudiante {
@@ -1085,6 +1094,23 @@ label {
   }
   body .error {
     font-size: 11px;
+  }
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-discord,
+  .fa-x-twitter,
+  .fa-instagram,
+  .fa-github,
+  .fa-linkedin {
+    font-size: 27px;
+  }
+  .footer {
+    height: 500px;
+  }
+  .footer-subredes {
+    margin-top: 5px;
   }
 }
 /*------------------------ Diseño Responsive 767px ------------------------*/
@@ -1196,7 +1222,7 @@ footer {
 }
 #mostrar-comentarios,
 #abrir-modal {
-  width: 45%;
+  width: 60%;
   font-size: 11px;
   border-radius: 3px;
   padding: 7px 10px;
@@ -1214,6 +1240,7 @@ footer {
 }
 /*-------------- Evento efecto aparicion Scroll ----------------*/
 
+.texto-feedback,
 #mostrar-comentarios,
 .info-redes-cel,
 .footer-subredes,
@@ -1226,6 +1253,7 @@ footer {
   transform: translateX(23%);
   transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
+.texto-feedback.visible,
 #mostrar-comentarios.visible,
 .info-redes-cel.visible,
 .footer-subredes.visible,

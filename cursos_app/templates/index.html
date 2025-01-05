@@ -589,25 +589,30 @@
             </p>
           </div>
           <div class="footer-valoracion col">
-            <button
-              id="abrir-modal"
-              class="h3-valoracion btn btn-success"
-              data-bs-toggle="modal"
-              data-bs-target="#modalValoracion"
-            >
-              <i class="fa-solid fa-star"></i>
-              <span class="texto-experiencia-usuario">Experiencia</span>
-            </button>
-            <button
-              id="mostrar-comentarios"
-              type="button"
-              class="btn btn-success"
-              data-bs-toggle="modal"
-              data-bs-target="#modalComentarios"
-            >
-              <i class="fa-solid fa-comments"></i>
-              <span class="texto-comentarios">Comentarios</span>
-            </button>
+            <h3 class="texto-feedback">
+              <i class="fa-solid fa-comment-dots"></i>Feedback
+            </h3>
+            <div class="contenedor-feedback">
+              <button
+                id="abrir-modal"
+                class="h3-valoracion btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#modalValoracion"
+              >
+                <i class="fa-solid fa-star"></i>
+                <span class="texto-experiencia-usuario">Experiencia</span>
+              </button>
+              <button
+                id="mostrar-comentarios"
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#modalComentarios"
+              >
+                <i class="fa-solid fa-comments"></i>
+                <span class="texto-comentarios">Comentarios</span>
+              </button>
+            </div>
             <div
               class="modal fade"
               id="modalValoracion"
