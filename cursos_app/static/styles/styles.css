@@ -915,6 +915,7 @@ label {
   #link-empezar {
     padding: 10px 40px;
   }
+  .texto-de-valoraciones,
   .texto-eliminar-estudiante,
   .texto-editar-estudiante,
   .texto-cancelar-edicion-estudiante,
@@ -1483,8 +1484,7 @@ footer {
 #fecha-comentario {
   color: black;
 }
-#estrellas-promedio,
-#h6-comentarios {
+#estrellas-promedio {
   font-size: 13px;
 }
 #h6-comentarios {

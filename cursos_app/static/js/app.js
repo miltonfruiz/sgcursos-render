@@ -1288,7 +1288,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const { promedio, valoraciones } = data;
         promedioContainer.innerHTML = `
           <div id="container-h6-comentarios" class="col">
-            <h6 id="h6-comentarios"><i class="fa-solid fa-thumbs-up"></i> Promedio de Valoraciones: ${promedio.toFixed(
+            <h6 id="h6-comentarios"><i class="fa-solid fa-thumbs-up"></i> Promedio <span class="texto-de-valoraciones">de Valoraciones</span>: ${promedio.toFixed(
               1
             )}
             </h6>
