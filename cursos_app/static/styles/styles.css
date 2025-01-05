@@ -886,6 +886,13 @@ label {
     top: 38%;
     transform: translateX(-100%);
   }
+  div .contenedor-texto-plataforma .texto-plataforma,
+  div .contenedor-texto-plataforma .texto-gestion {
+    font-size: 19px;
+  }
+  div .contendor-texto-diseño {
+    margin-top: 115px;
+  }
 }
 /* ------------------------ Diseño Responsive 480px ------------------------*/
 @media (max-width: 480px) {
