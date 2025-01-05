@@ -866,11 +866,9 @@ label {
     margin: 0;
     padding: 0;
   }
-  div .presentacion {
-    width: 70%;
-  }
-  .presentacion {
-    margin-top: 10px;
+  div #presentacion-480px {
+    margin-top: 20px;
+    width: 76%;
   }
   #link-empezar {
     padding: 10px 40px;
@@ -892,10 +890,6 @@ label {
   .contenedor-texto-plataforma .texto-educativa {
     display: none;
   }
-  .contenedor-texto-plataforma .texto-plataforma,
-  .contenedor-texto-plataforma .texto-gestion {
-    font-size: 20px;
-  }
   .contendor-texto-diseño {
     margin-top: 140px;
   }
@@ -904,7 +898,7 @@ label {
     height: 75%;
   }
   .presentacion .texto-solucion {
-    font-size: 9px;
+    font-size: 11px;
   }
   #main-section {
     width: 100%;
@@ -1058,13 +1052,18 @@ label {
   .contenedor-texto-plataforma .texto-plataforma,
   .contenedor-texto-plataforma .texto-gestion,
   .contenedor-texto-plataforma .texto-educativa {
-    font-size: 20px;
+    font-size: 24px;
   }
   div .presentacion {
-    width: 60%;
+    width: 68%;
+    margin-top: 10px;
   }
   #main-section {
     width: 100%;
+  }
+  .presentacion .texto-solucion {
+    font-size: 11px;
+    padding: 0;
   }
 }
 /*------------------------ Diseño Responsive 991px ------------------------*/
