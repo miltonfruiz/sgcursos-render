@@ -482,7 +482,7 @@ input:hover {
   width: 80%;
   border-radius: 24px;
   font-size: 11px;
-  padding: 7px 30px;
+  padding: 8px 30px;
 }
 #busqueda-container {
   display: flex;
@@ -852,6 +852,40 @@ label {
   font-size: 11px;
   font-weight: 300;
   color: white !important;
+}
+/* ------------------------ Diseño Responsive 395px ------------------------*/
+@media (max-width: 395px) {
+  .input-container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+  }
+  .container-json,
+  .contenedor-select {
+    width: 20%;
+  }
+  #busqueda-container {
+    max-width: 163px;
+    width: 100%;
+    position: relative;
+  }
+  .contenedor-select #filtro-estudiantes {
+    margin-left: 15px;
+  }
+  #busqueda-ingresada {
+    padding: 8px 90px;
+  }
+  div #exportar-json {
+    padding: 10px 23px;
+  }
+  div #fa-lupa {
+    position: absolute;
+    left: 0%;
+    top: 38%;
+    transform: translateX(-100%);
+  }
 }
 /* ------------------------ Diseño Responsive 480px ------------------------*/
 @media (max-width: 480px) {
