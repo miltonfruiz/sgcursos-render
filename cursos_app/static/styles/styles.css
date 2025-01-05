@@ -893,6 +893,9 @@ label {
   div .contendor-texto-diseño {
     margin-top: 115px;
   }
+  .footer {
+    height: 600px;
+  }
 }
 /* ------------------------ Diseño Responsive 480px ------------------------*/
 @media (max-width: 480px) {
