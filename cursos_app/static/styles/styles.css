@@ -1031,10 +1031,14 @@ label {
   div #guardar-edicion {
     width: 25%;
   }
-  body .mensaje {
+  body .success {
     display: flex;
     justify-content: center;
-    width: 55%;
+    width: 48%;
+    font-size: 11px;
+  }
+  body .error {
+    font-size: 11px;
   }
 }
 /*------------------------ Diseño Responsive 767px ------------------------*/
