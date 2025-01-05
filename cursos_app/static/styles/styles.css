@@ -1051,7 +1051,7 @@ label {
     margin-top: 30px;
   }
   div .copyright {
-    padding: 53px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
   }
   td #boton-eliminar-estudiante,
   td #boton-editar-estudiante {
@@ -1076,7 +1076,7 @@ label {
   body .success {
     display: flex;
     justify-content: center;
-    width: 48%;
+    width: 58%;
     font-size: 11px;
   }
   body .error {
