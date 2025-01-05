@@ -421,6 +421,7 @@ td {
   opacity: 1;
   transition: top 1.5s ease, opacity 1s ease;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: auto;
 }
 .mensaje.mostrar {
   top: 50%;
@@ -1029,6 +1030,11 @@ label {
   div #cancelar-edicion,
   div #guardar-edicion {
     width: 25%;
+  }
+  body .mensaje {
+    display: flex;
+    justify-content: center;
+    width: 55%;
   }
 }
 /*------------------------ Diseño Responsive 767px ------------------------*/

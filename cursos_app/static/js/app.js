@@ -536,7 +536,7 @@ formCurso.addEventListener("submit", async (e) => {
       return;
     }
     cursos.push(new Curso(cursoCorregido, profesorCorregido));
-    mostrarMensaje(`¡Curso "${data.curso.nombre}" agregado!`, data.tipo);
+    mostrarMensaje(`¡Curso ${data.curso.nombre} agregado!`, data.tipo);
     formCurso.reset();
     actualizarCursosSelect();
     mostrarCursos();
@@ -629,7 +629,7 @@ guardarEdicion.addEventListener("click", async () => {
       editarCurso(cursoActual.nombre, nuevoNombre, nuevoProfesor);
       guardarDatos();
       if (camposModificados || estudiantesModificados) {
-        mostrarMensaje(`¡Curso "${nuevoNombre}" editado!`, "success");
+        mostrarMensaje(`¡Curso ${nuevoNombre} editado!`, "success");
       }
       tablaModificada = false;
       camposModificados = false;
@@ -691,7 +691,7 @@ listaCursos.addEventListener("click", async (e) => {
         guardarDatos();
         mostrarCursos();
         actualizarCursosSelect();
-        mostrarMensaje(`¡Curso "${cursoNombre}" eliminado!`, "success");
+        mostrarMensaje(`¡Curso ${cursoNombre} eliminado!`, "success");
       } catch (error) {
         mostrarMensaje("Error al conectar con el servidor.", "error");
         console.error("Error:", error);
