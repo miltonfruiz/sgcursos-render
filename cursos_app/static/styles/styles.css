@@ -1019,6 +1019,7 @@ label {
   div #mensaje-confirmacion {
     font-size: 11px;
   }
+  p .estas-seguso-cambios,
   button .texto-cancelar-estudiante,
   button .texto-guardar-estudiante,
   p .estas-seguro-estudiante,

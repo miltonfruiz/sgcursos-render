@@ -1062,7 +1062,8 @@ cancelarEdicion.addEventListener("click", () => {
     if (mensajeConfirmacion && modalConfirmacion) {
       mensajeConfirmacion.innerHTML = `
         <i class="fa-solid fa-triangle-exclamation"></i> 
-        ¿Estás seguro de que deseas cancelar los cambios?  
+        ¿<span class="estas-seguso-cambios">
+        Estás seguro de que </span>deseas cancelar los cambios?  
         <i class="fa-solid fa-triangle-exclamation"></i>
       `;
       modalConfirmacion.show();
